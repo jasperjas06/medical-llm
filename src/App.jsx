@@ -53,7 +53,7 @@ const siteTitle = import.meta.env.VITE_SITE_TITLE;
           Authorization: `Bearer ${apiKey}`,
           'Content-Type': 'application/json',
           'HTTP-Referer': window.location.origin,
-          'X-Title': `siteTitle`,
+          'X-Title': `${siteTitle}`,
         },
         body: JSON.stringify({
           model: 'openrouter/auto',
